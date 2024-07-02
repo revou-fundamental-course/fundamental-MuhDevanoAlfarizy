@@ -17,8 +17,8 @@
                 <div class="logo"></div>
                 <div class="navigation">
                     <a href="#home">Home</a>
+                    <a href="#aboutme">About Me</a>
                     <a href="#project">Project</a>
-                    <a href="#certificate">Certificate</a>
                     <a href="#contact">Contact Me</a>
                 </div>
             </nav>
@@ -27,25 +27,72 @@
 
         <!-- Bagian Main -->
         <main>
+            <!-- Banner Web -->
             <section class="header-web">
                 <header class="desc-header">
                     <h1>Hi <span id="name">User</span>, welcome to my portofolio!</h1>
                     <p>Mini project mengenai portofolio singkat Devano</p>
                     <!-- <button id="changeName">Ganti Namamu</button> -->
                 </header>
-                <section>
+                <article>
                     <div class="devano-pic"></div>
-                </section>
+                </article>
             </section>
-            <!-- <section class="form-iseng">
-                <h1>Form Iseng Aja</h1>
-                <form action="" name="messageForm" onsubmit="return validateForm()">
-                    <input type="text" placeholder="Nama kamu" id="name-input" name="name-input" />
-                    <button id="kirim" type="submit">Kirimkan!</button>
-                    <p id="errorName"></p>
-                </form>
-                <h2></h2>
-            </section> -->
+            <!-- End of Banner Web -->
+
+            <!-- About me -->
+            <section class="about-me" id="aboutme">
+                <header class="title-about"><h1>About Me</h1></header>
+                <article class="content">
+                    <p>Perkenalkan, nama saya Muh Devano Alfarizy, biasa dipanggil Devano, Dev, Dep. Status saya saat ini adalah mahasiswa semester 2. Bentar lagi semester 3 sih, soalnya udah mau masuk musim UAS. Saya kuliah di universitas swasta bernama Universitas Duta Bangsa yang letaknya ada di kampung halaman Bapak Joko Widodo, Solo. Saya mengambil prodi Teknik Informatika di kampus tercinta ini. Saat ini saya masih dalam proses belajar Front-End Development, dan bercita-cita menjadi Full Stack Developer. Bismillah semoga bisa🔥</p>
+                </article>
+            </section>
+            <!-- End of About Me -->
+
+            <!-- Project -->
+            <section class="project" id="project">
+                <header class="title-project"><h1>My Project</h1></header>
+                <div class="showcase-project">
+                    <div class="portofolio0">
+                        <img src="assets/web1.png" alt="Website Portofolio 0" width="500rem" class="container-img" />
+                        <h1><a href="https://devanoalfarizy.vercel.app/">Portofolio Versi 0.0</a></h1>
+                    </div>
+                    <div class="build-with-depth">
+                        <img src="assets/web2.png" alt="Website Latihan Bootstrap" width="500rem" class="container-img" />
+                        <h1><a href="https://itsodepth.github.io/build-with-depth/">Build With Depth</a></h1>
+                    </div>
+                </div>
+            </section>
+            <!-- End of Project -->
+
+            <!-- Contact Me -->
+            <section class="contact-me">
+                <header class="title-about">
+                    <h1>Contact Me!</h1>
+                </header>
+                <article>
+                    <form name="message-form" onsubmit="return validateForm()">
+                        Nama: <input placeholder="Nama" type="text" name="full-name" /><br />
+
+                        Tanggal Lahir: <input type="date" name="birth-date" /><br />
+
+                        Jenis Kelamin: <input type="radio" id="male" name="gender" value="male" />
+                        <label for="male">Laki-laki</label>
+                        <input type="radio" id="female" name="gender" value="female" />
+                        <label for="female">Perempuan</label><br />
+
+                        Pesan: <textarea placeholder="Pesan" name="messages"></textarea><br />
+                        <input type="submit" value="submit" />
+                    </form>
+                    <div>
+                        <p>Nama: <span id="sender-full-name"></span></p>
+                        <p>Tanggal Lahir: <span id="sender-birth-date"></span></p>
+                        <p>Jenis Kelamin: <span id="sender-gender"></span></p>
+                        <p>Pesan: <span id="sender-messages"></span></p>
+                    </div>
+                </article>
+            </section>
+            <!-- End of Contact Me -->
         </main>
         <!-- Bagian akhir Main -->
 

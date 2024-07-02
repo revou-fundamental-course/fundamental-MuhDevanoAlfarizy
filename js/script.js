@@ -6,28 +6,26 @@ function replaceName() {
     document.getElementById("name").innerHTML = name;
 }
 
-// document.getElementById("changeName").addEventListener("click", function () {
-//     replaceName();
-// });
+document.getElementById("changeName").addEventListener("click", function () {
+    replaceName();
+});
 
-// let nameInput = document.getElementById("name-input");
+function setSenderUI(name, birthDate, gender, messages) {
+    document.getElementById("sender-full-name").innerHTML = name;
+    document.getElementById("sender-birth-date").innerHTML = birthDate;
+    document.getElementById("sender-gender").innerHTML = gender;
+    document.getElementById("sender-messages").innerHTML = messages;
+}
 
-// document.getElementById("kirim").addEventListener("click", function () {
-//     const nama = nameInput.value;
-//     if (nama == "") {
-//         document.getElementById("errorName").innerHTML = "Nama tidak boleh kosong!";
-//     } else {
-//         document.getElementById("name").innerHTML = nama;
-//     }
-// });
+function validateForm() {
+    const name = document.forms["message-form"]["full-name"].value;
+    const birthDate = document.forms["message-form"]["birth-date"].value;
+    const gender = document.forms["message-form"]["messages"].value;
 
-// function validateForm() {
-//     const nama = document.forms["messageForm"]["name-input"].value;
-//     if (nama == "") {
-//         document.getElementById("errorName").innerHTML = "Tidak boleh kosong";
-//         return false;
-//     }
-//     document.getElementById("name").innerHTML = nama;
-//     document.getElementById("errorName").innerHTML = "";
-//     return false;
-// }
+    if (name == "" || birthDate == "" || gender == "" || messages == "") {
+        alert("Tidak boleh kosong!");
+        return false;
+    }
+    setSenderUI(name, birthDate, gender, messages);
+    return false;
+}
