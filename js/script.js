@@ -1,5 +1,5 @@
-let name = prompt("Halo, siapa namamu?", "");
-document.getElementById("name").innerHTML = name;
+// let name = prompt("Halo, siapa namamu?", "");
+// document.getElementById("name").innerHTML = name;
 
 function replaceName() {
     let name = prompt("Halo, siapa namamu?", "");
@@ -20,7 +20,8 @@ function setSenderUI(name, birthDate, gender, messages) {
 function validateForm() {
     const name = document.forms["message-form"]["full-name"].value;
     const birthDate = document.forms["message-form"]["birth-date"].value;
-    const gender = document.forms["message-form"]["messages"].value;
+    const gender = document.forms["message-form"]["gender"].value;
+    const messages = document.forms["message-form"]["messages"].value;
 
     if (name == "" || birthDate == "" || gender == "" || messages == "") {
         alert("Tidak boleh kosong!");

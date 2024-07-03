@@ -21,6 +21,11 @@
                     <a href="#project">Project</a>
                     <a href="#contact">Contact Me</a>
                 </div>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
             </nav>
         </header>
         <!-- Akhir dari Header -->
@@ -66,29 +71,33 @@
             <!-- End of Project -->
 
             <!-- Contact Me -->
-            <section class="contact-me">
+            <section class="contact-me" id="contact">
                 <header class="title-about">
                     <h1>Contact Me!</h1>
                 </header>
-                <article>
-                    <form name="message-form" onsubmit="return validateForm()">
-                        Nama: <input placeholder="Nama" type="text" name="full-name" /><br />
+                <article class="form-container">
+                    <div class="form-validation">
+                        <div class="input-form">
+                            <form name="message-form" onsubmit="return validateForm()">
+                                <p class="name">Nama: <input placeholder="Nama" type="text" name="full-name" id="full-name" /><br /></p>
+                                <p class="birth-date">Tanggal Lahir: <input type="date" name="birth-date" id="birth-date" /><br /></p>
+                                <p class="gender">
+                                    Jenis Kelamin: <input type="radio" id="male" name="gender" value="Laki-laki" />
+                                    <label for="male">Laki-laki</label>
+                                    <input type="radio" id="female" name="gender" value="Perempuan" />
+                                    <label for="female">Perempuan</label><br />
+                                </p>
+                                <p class="messages">Pesan: <textarea placeholder="Pesan" name="messages" id="messages"></textarea><br /></p>
+                                <p><input type="submit" value="Submit" /></p>
+                            </form>
+                        </div>
 
-                        Tanggal Lahir: <input type="date" name="birth-date" /><br />
-
-                        Jenis Kelamin: <input type="radio" id="male" name="gender" value="male" />
-                        <label for="male">Laki-laki</label>
-                        <input type="radio" id="female" name="gender" value="female" />
-                        <label for="female">Perempuan</label><br />
-
-                        Pesan: <textarea placeholder="Pesan" name="messages"></textarea><br />
-                        <input type="submit" value="submit" />
-                    </form>
-                    <div>
-                        <p>Nama: <span id="sender-full-name"></span></p>
-                        <p>Tanggal Lahir: <span id="sender-birth-date"></span></p>
-                        <p>Jenis Kelamin: <span id="sender-gender"></span></p>
-                        <p>Pesan: <span id="sender-messages"></span></p>
+                        <div class="output-form">
+                            <p>Nama: <span id="sender-full-name"></span></p>
+                            <p>Tanggal Lahir: <span id="sender-birth-date"></span></p>
+                            <p>Jenis Kelamin: <span id="sender-gender"></span></p>
+                            <p>Pesan: <span id="sender-messages"></span></p>
+                        </div>
                     </div>
                 </article>
             </section>
@@ -97,7 +106,12 @@
         <!-- Bagian akhir Main -->
 
         <!-- Bagian Footer -->
-        <footer></footer>
+        <footer>
+            <div class="footer-styling">
+                <h2 class="judul-footer">Made with ♥ by Devano</h2>
+                <p class="desc-footer">Terima kasih RevoU untuk kelasnya!</p>
+            </div>
+        </footer>
         <!-- Bagian akhir Footer -->
         <script src="js/script.js"></script>
     </body>
