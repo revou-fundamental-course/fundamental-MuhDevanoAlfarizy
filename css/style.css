@@ -133,7 +133,6 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
     background-color: #071952;
     padding: 15px 20px 15px 20px;
 }
@@ -155,6 +154,20 @@ nav {
 .navigation a:hover {
     color: #088395;
     transition: 0.2s ease-in-out;
+}
+
+#changeName {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#changeName:hover {
+    background-color: #0056b3;
 }
 
 .hamburger {
@@ -276,7 +289,7 @@ nav {
 
 .showcase-project img {
     border-radius: 8px;
-    border: 5px solid #071952;
+    border: 3px solid #071952;
 }
 
 .showcase-project h1 {
