@@ -1,5 +1,5 @@
-// let name = prompt("Halo, siapa namamu?", "");
-// document.getElementById("name").innerHTML = name;
+let name = prompt("Halo, siapa namamu?", "");
+document.getElementById("name").innerHTML = name;
 
 function replaceName() {
     let name = prompt("Halo, siapa namamu?", "");
